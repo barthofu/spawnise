@@ -1,0 +1,46 @@
+{
+  "name": "spawnise",
+  "version": "1.1.2",
+  "description": "Reactive state management written in TypeScript with a minimal API and full power of RxJS",
+  "main": "./build/spawn.js",
+  "types": "./build/spawn.d.ts",
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --require ts-node/register src/**/*.test.ts",
+    "release": "npm run build && np --no-2fa"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "spawn",
+    "promise",
+    "commands"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barthofu/spawnise.git"
+  },
+  "author": "Bartholomé Gili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barthofu/spawnise/issues"
+  },
+  "homepage": "https://github.com/barthofu/spawnise#readme",
+  "dependencies": {
+    "bl": "^5.0.0",
+    "cross-spawn": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.0",
+    "typescript": "^4.8.4",
+    "np": "^7.6.2",
+    "@types/bl": "^5.0.2",
+    "@types/cross-spawn": "^6.0.2"
+  }
+}
