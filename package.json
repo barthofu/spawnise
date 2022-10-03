@@ -1,6 +1,6 @@
 {
   "name": "spawnise",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Reactive state management written in TypeScript with a minimal API and full power of RxJS",
   "main": "./build/spawn.js",
   "types": "./build/spawn.d.ts",
