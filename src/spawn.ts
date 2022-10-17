@@ -5,9 +5,9 @@ import BufferList from "bl/BufferList"
 import { SpawnError } from './utils/SpawnError'
 import { SpawnPromise } from './utils/SpawnPromise'
 
-export const spawn = (command: string, options: SpawnOptions = {}) => {
+export const spawn = (command: string, args: string[], options: SpawnOptions = {}) => {
 
-    const child = crossSpawn(command, options)
+    const child = crossSpawn(command, args, options)
 
     let stdout: BufferList | string
     let stderr: BufferList | string
